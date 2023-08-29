@@ -100,5 +100,8 @@ meter {
     all: revert;
 }
 
-// Fonts abasalon, the vanguard and open sans
+body{
+    background: #ECECEC url('../img/paper-bg.png') repeat-y center center / cover;
+    font-family: sans-serif;
+}
 
