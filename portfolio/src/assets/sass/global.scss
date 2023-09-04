@@ -100,8 +100,27 @@ meter {
     all: revert;
 }
 
-body{
-    background: #ECECEC url('../img/paper-bg.png') repeat-y center center / cover;
+body {
+    background: #ECECEC url('../img/paper-bg.png') repeat-y center center / 100%;
     font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: url('../img/page-scroll.svg') no-repeat center center / contain;
+}
+
+body {
+    scrollbar-width: 10px;
+    scrollbar-color: transparent transparent url('../img/page-scroll.svg') center / contain;
+}
+
+body {
+    -ms-scrollbar-width: 10px;
+    -ms-scrollbar-thumb-color: transparent;
+    -ms-scrollbar-thumb: url('../img/page-scroll.svg') center center / contain;
 }
 
