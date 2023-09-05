@@ -4,7 +4,7 @@ interface TranslatorProps {
   path: string;
 }
 
-const Translator: React.FC<TranslatorProps> = ({ path }) => {
+const Translator= ({ path }: TranslatorProps) => {
   const { t } = useTranslation();
 
   return t(path);

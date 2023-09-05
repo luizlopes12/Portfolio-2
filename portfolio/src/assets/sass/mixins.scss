@@ -1,5 +1,17 @@
-
+@import '../../assets/sass/fonts.scss';
 
 @mixin sectionContainer(){
-    
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 3rem auto;
+}
+
+@mixin sectionTitle(){
+    font-family: $font-vanguard;
+    color: $color-gray-1;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

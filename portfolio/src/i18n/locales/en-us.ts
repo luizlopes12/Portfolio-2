@@ -6,5 +6,9 @@ export default {
       experiences: 'Experiences',
       projects: 'Projects',
       contact: 'Contact',
+      settings: 'Settings',
+      spanish: 'Spanish',
+      english: 'English',
+      portuguese: 'Portuguese'
     }
   }
