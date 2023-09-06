@@ -2,6 +2,7 @@
 @import "../../assets/sass/mixins.scss";
 @import "../../assets/sass/variables.scss";
 
+
 .navbar__section {
   font-family: $font-abasalom;
   @include sectionContainer;
@@ -9,6 +10,7 @@
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
+  padding: 2rem 1rem 1rem;
 }
 
 .brandlogo__figure {
@@ -26,6 +28,7 @@
 
 .navbar__item {
   font-size: 1.5rem;
+  z-index: 10;
 }
 
 .configs__tooltip-container{
@@ -35,7 +38,17 @@
     position: absolute;
     right: -15px;
     top: -40px;
-    
+    z-index: 0;
+    &.-active{
+        z-index: 11;
+        .configs__tooltip-icon {
+          transform: rotate(-45deg);
+        }
+        .configs__tooltip-text {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
 }
 
 .configs__tooltip-header {
@@ -53,6 +66,7 @@
       visibility: visible;
     }
   }
+
 }
 
 .configs__tooltip-text {
@@ -80,13 +94,14 @@
     margin: 0 .2rem 0 0;
     visibility: hidden;
     height: 0;
-    transition: all .2s ease-in-out;
     opacity: 0;
+    transition: all .2s ease-in-out;
 
     &.-active{
         opacity: 1;
         visibility: visible;
         height: 100%;
+        z-index: 11;
     }
 }
 
