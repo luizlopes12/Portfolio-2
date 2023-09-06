@@ -15,6 +15,8 @@ const Navbar = () => {
   const configsTooltipContainerRef = useRef<HTMLDivElement>(null);
   const mobileMenuContainerRef = useRef<HTMLDivElement>(null);
   const navbarContainerRef = useRef<HTMLDivElement>(null);
+  const [userTheme, setUserTheme] = useState<"light" | "dark">("light");
+  const [userLanguage, setUserLanguage] = useState<"pt" | "en" | "es">("pt");
 
   const handleShowConfigs = () => {
     if (configsTooltipBodyRef.current && configsTooltipContainerRef.current) {
