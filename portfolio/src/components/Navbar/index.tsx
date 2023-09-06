@@ -6,7 +6,7 @@ import mobileLine2 from "../../assets/img/mobile-line2.svg";
 import mobileLine3 from "../../assets/img/mobile-line3.svg";
 import Translator from "../I18n/Translator";
 import { useTranslation } from "react-i18next";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 const Navbar = () => {
   const { t } = useTranslation();
