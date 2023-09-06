@@ -17,9 +17,6 @@
 
 .brandlogo__figure {
   max-width: 200px;
-  @media screen and (max-width: 768px) {
-    max-width: 150px;
-  }
 }
 
 .navbar__container {
@@ -33,7 +30,7 @@
     gap: 2rem;
     justify-content: start;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 8rem;
     top: 0;
     right: 0;
     height: 100vh;
@@ -61,6 +58,7 @@
   z-index: 10;
   position: relative;
   @media screen and (max-width: 768px) {
+    font-size: 1.8rem;
     text-align: center;
   }
   ::after {
@@ -143,6 +141,9 @@
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 }
 
 .configs__tooltip-icon {
@@ -184,32 +185,32 @@
   width: fit-content;
   gap: 2px;
   img {
-    width: 30px;
+    width: 35px;
   }
   .mobile__menu-line1 {
     transition: all 0.2s ease-in-out;
-    width: 30px;
+    width: 35px;
   }
   .mobile__menu-line2 {
     transition: all 0.2s ease-in-out;
-    width: 25px;
+    width: 30px;
   }
   .mobile__menu-line3 {
     transition: all 0.2s ease-in-out;
-    width: 20px;
+    width: 25px;
   }
 
   &.-active {
     filter: invert(1);
     .mobile__menu-line1 {
       transform: rotate(45deg) translate(5px, 7px);
-      width: 28px;
+      width: 35px;
     }
     .mobile__menu-line2 {
       opacity: 0;
     }
     .mobile__menu-line3 {
-      width: 28px;
+      width: 35px;
       transform: rotate(-45deg) translate(5px, -5px);
     }
   }
