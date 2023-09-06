@@ -124,3 +124,6 @@ body {
     -ms-scrollbar-thumb: url('../img/page-scroll.svg') center center / contain;
 }
 
+html{
+    scroll-behavior: smooth;
+}

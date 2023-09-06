@@ -9,6 +9,7 @@ export default {
         settings: 'Configurações',
         spanish: 'Espanhol',
         english: 'Inglês',
-        portuguese: 'Português'
+        portuguese: 'Português',
+        idioms: 'Idiomas',
     }
   }

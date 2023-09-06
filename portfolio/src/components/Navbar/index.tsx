@@ -4,9 +4,13 @@ import configIcon from "../../assets/img/config-icon.svg";
 import mobileLine1 from "../../assets/img/mobile-line1.svg";
 import mobileLine2 from "../../assets/img/mobile-line2.svg";
 import mobileLine3 from "../../assets/img/mobile-line3.svg";
+import brazilFlag from "../../assets/img/brazil-flag.svg";
+import usaFlag from "../../assets/img/usa-flag.svg";
+import spainFlag from "../../assets/img/spain-flag.svg";
 import Translator from "../I18n/Translator";
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
+import { changeLanguage } from "i18next";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -15,8 +19,6 @@ const Navbar = () => {
   const configsTooltipContainerRef = useRef<HTMLDivElement>(null);
   const mobileMenuContainerRef = useRef<HTMLDivElement>(null);
   const navbarContainerRef = useRef<HTMLDivElement>(null);
-  // const [userTheme, setUserTheme] = useState<"light" | "dark">("light");
-  // const [userLanguage, setUserLanguage] = useState<"pt" | "en" | "es">("pt");
 
   const handleShowConfigs = () => {
     if (configsTooltipBodyRef.current && configsTooltipContainerRef.current) {
@@ -31,6 +33,12 @@ const Navbar = () => {
       navbarContainerRef.current.classList.toggle("-active");
     }
   };
+
+  const handleChangeLanguage = (lang: string) => {
+    localStorage.setItem('lang', lang);
+    changeLanguage(lang);
+    handleShowConfigs();
+  }
 
   return (
     <section className="navbar__section-container">
@@ -59,13 +67,26 @@ const Navbar = () => {
                 <img src={configIcon} alt={t("settings")} />
               </figure>
               <div className="configs__tooltip-text">
-                <Translator path="settings" />
+                <Translator path="idioms" />
               </div>
             </div>
             <div
               className="configs__tooltip-body"
               ref={configsTooltipBodyRef}
-            ></div>
+            >
+              <div className="config__idiom-option" onClick={() => handleChangeLanguage('pt')}>
+                <Translator path="portuguese" />
+                <img src={brazilFlag} alt={t("portuguese")} />
+              </div>
+              <div className="config__idiom-option" onClick={() => handleChangeLanguage('en')}>
+                <Translator path="english" />
+                <img src={usaFlag} alt={t("english")} />
+              </div>
+              <div className="config__idiom-option" onClick={() => handleChangeLanguage('es')}>
+                <Translator path="spanish" />
+                <img src={spainFlag} alt={t("spanish")} />
+              </div>
+            </div>
           </div>
           <ul className="navbar__list">
             <li className="navbar__item">

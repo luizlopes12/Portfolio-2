@@ -1,0 +1,8 @@
+@import '../../assets/sass/fonts.scss';
+@import '../../assets/sass/mixins.scss';
+@import '../../assets/sass/variables.scss';
+
+.techs__section-container{
+    @include sectionContainer;
+}
+
