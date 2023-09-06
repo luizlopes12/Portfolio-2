@@ -1,9 +1,9 @@
-import ptBrTranslations from './pt-br'
-import enUsTranslations from './en-us'
-import esEsTranslations from './es-es'
+import ptBrTranslations from './pt'
+import enUsTranslations from './en'
+import esEsTranslations from './es'
 
 export default {
-  'pt-BR': ptBrTranslations,
-  'en-US': enUsTranslations,
-  'es-ES': esEsTranslations
+  'pt': ptBrTranslations,
+  'en': enUsTranslations,
+  'es': esEsTranslations
 }

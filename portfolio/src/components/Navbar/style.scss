@@ -1,7 +1,92 @@
-@import '../../assets/sass/fonts.scss';
-@import '../../assets/sass/mixins.scss';
+@import "../../assets/sass/fonts.scss";
+@import "../../assets/sass/mixins.scss";
+@import "../../assets/sass/variables.scss";
 
-.navbar__section{
-    font-family: $font-abasalom;
-    @include sectionContainer;
+.navbar__section {
+  font-family: $font-abasalom;
+  @include sectionContainer;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
 }
+
+.brandlogo__figure {
+  max-width: 220px;
+}
+
+.navbar__container {
+  position: relative;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__item {
+  font-size: 1.5rem;
+}
+
+.configs__tooltip-container{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    position: absolute;
+    right: -15px;
+    top: -40px;
+    
+}
+
+.configs__tooltip-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-direction: row-reverse;
+  &:hover {
+    .configs__tooltip-icon {
+      transform: rotate(-45deg);
+    }
+    .configs__tooltip-text {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.configs__tooltip-text {
+  opacity: 0;
+  font-size: 1.2rem;
+  color: $color-white;
+  background: $color-gray-1;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.configs__tooltip-icon {
+  cursor: pointer;
+  width: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.configs__tooltip-body{
+    background: $color-gray-1;
+    color: $color-white;
+    padding: 1rem .5rem;
+    border-radius: 5px 0 5px 5px;
+    margin: 0 .2rem 0 0;
+    visibility: hidden;
+    height: 0;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+
+    &.-active{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+}
+
