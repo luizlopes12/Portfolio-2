@@ -6,3 +6,10 @@
     @include sectionContainer;
 }
 
+.about__section-title{
+    @include sectionTitle;
+    &::after{
+        width: 100%;
+        background: url('../../assets/img/about-title-underline.svg') no-repeat center center / contain;
+    }
+}

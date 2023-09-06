@@ -6,3 +6,12 @@
     @include sectionContainer;
 }
 
+.contact__section-title{
+    @include sectionTitle;
+    &::after{
+        background: url('../../assets/img/contact-title-underline.svg') no-repeat left center / contain;
+        @media screen and (max-width: 768px){
+            width: 110px;
+        }
+    }
+}

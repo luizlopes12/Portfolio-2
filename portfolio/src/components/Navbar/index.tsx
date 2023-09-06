@@ -35,7 +35,6 @@ const Navbar = () => {
   };
 
   const handleChangeLanguage = (lang: string) => {
-    localStorage.setItem('lang', lang);
     changeLanguage(lang);
     handleShowConfigs();
   }

@@ -6,3 +6,9 @@
     @include sectionContainer;
 }
 
+.techs__section-title{
+    @include sectionTitle;
+    &::after{
+        background: url('../../assets/img/tech-title-underline.svg') no-repeat left center / contain;
+    }
+}
