@@ -126,11 +126,6 @@
       opacity: 1;
       visibility: visible;
     }
-    @media screen and (max-width: 768px) {
-      .configs__tooltip-icon {
-        transform: rotate(0);
-      }
-    }
   }
 
   @media screen and (max-width: 768px) {
@@ -153,7 +148,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   @media screen and (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -200,7 +195,7 @@
       filter: brightness(.95);
     }
     @media screen and (max-width: 768px) {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         img{
           height: 25px;
         }
