@@ -20,6 +20,21 @@
     align-items: flex-end;
     padding: 0 2rem;
     position: relative;
+    gap: .5rem;
+    @media screen and (max-width: 1080px){
+        padding: 0;
+    }
+    @media screen and (max-width: 1024px){
+        min-height: 380px;
+    }
+    @media screen and (max-width: 845px){
+        min-height: 350px;
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 
 .about__section-illustrations{
@@ -32,6 +47,45 @@
         top: 10px;
         right: -260px;
     }
+    @media screen and (max-width: 1024px){
+       max-width: 320px;
+       .hero__illustration2{
+           right: -220px;
+       }
+    }
+
+    @media screen and (max-width: 845px){
+        max-width: 280px;
+        .hero__illustration2{
+            right: -200px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        align-self: center;
+    }
+
+    @media screen and (max-width: 580px){
+        width: 100%;
+        align-self: flex-start;
+        .hero__illustration2{
+            width: 300px;
+        }
+    }
+    @media screen and (max-width: 425px){
+        max-width: 250px;
+        .hero__illustration2{
+            width: 300px;
+            right: -180px;
+        }
+    }
+
+    @media screen and (max-width: 425px){
+        max-width: 220px;
+        .hero__illustration2{
+            width: 300px;
+            right: -160px;
+        }
+    }
 }
 
 .about__section-texts{
@@ -39,6 +93,13 @@
     flex-direction: column;
     gap: .5rem;
     max-width: 500px;
+    @media screen and (max-width: 1024px){
+        max-width: 400px;
+    }
+    @media screen and (max-width: 768px){
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 .about__text-title{
@@ -46,6 +107,17 @@
     font-family: $font-abasalom;
     font-weight: 900;
     color: $color-dark-2;
+    @media screen and (max-width: 1024px){
+        font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: 845px){
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 380px){
+        font-size: 2rem;
+    }
 }
 
 .about__text-techs{
@@ -53,12 +125,29 @@
     font-weight: 700;
     font-size: 1.5rem;
     color: $color-dark-3;
+    @media screen and (max-width: 1024px){
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 845px){
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 380px){
+        font-size: 1.1rem;
+    }
 }
 
 .about__text-aboutme{
     font-family: $font-opensans;
     font-weight: 500;
     color: $color-gray-1;
+    font-size: 1rem;
+    @media screen and (max-width: 1024px){
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 380px){
+        font-size: .95rem;
+    }
 }
 
 .about__text-contact{
@@ -80,10 +169,36 @@
             background: url('../../assets/img/contact-btn-underline.svg') no-repeat center center / 100%;
         }
     }
+    @media screen and (max-width: 768px){
+        align-self: center;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 380px){
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .about__section-location{
     align-self: flex-start;
+    width: 150px;
+    @media screen and (max-width: 768px){
+        position: absolute;
+        transform: rotate(90deg);
+        right: -100px;
+        top: 80px;
+    }
+
+    @media screen and (max-width: 425px){
+        right: -120px;
+    }
+
+    @media screen and (max-width: 380px){
+        top: 60px;
+        right: -140px;
+    }
 }
 
 /*
@@ -112,6 +227,10 @@
     position: absolute;
     left: -50px;
     top: 30px;
+    @media screen and (max-width: 580px){
+        left: -10px;
+        top: -20px;
+    }
 }
 
 .about__vue-icon1{
@@ -119,6 +238,19 @@
     left: 160px;
     bottom: -50px;
     height: 35px;
+    @media screen and (max-width: 768px){
+        left: -20px;
+        bottom: 20px;
+        height: 25px;
+    }
+    @media screen and (max-width: 580px){
+        left: 10px;
+    }
+    @media screen and (max-width: 380px){
+        left: 0;
+        bottom: 0;
+        height: 20px;
+    }
 }
 
 .about__node-icon1{
@@ -133,5 +265,23 @@
     right: -10px;
     bottom: -50px;
     height: 80px;
+    @media screen and (max-width: 768px){
+        right: -40px;
+        bottom: 20px;
+        height: 50px;
+    }
 }
 
+.about__text1,
+.about__tex2{
+    width: 100%;
+    font-family: $font-abasalom;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: $color-gray-4;
+    text-align: center;
+    @media screen and (max-width: 380px){
+        font-size: .9rem;
+        line-height: 0.8rem;
+    }
+}

@@ -15,8 +15,10 @@ export default {
         worksIllustration: 'Diseñador Ui/Ux, Desarrollador Front-end y Back-end',
         fullstackDeveloper: 'Desarrollador Fullstack',
         techsFocus: 'Centrado en React, Vue, node y Progressive web apps.',
-        aboutMeText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+        aboutMeText: 'Soy un desarrollador fullstack con varios años de experiencia en desarrollo web y móvil, trabajando con empresas grandes y pequeñas como freelance u otros modelos de contrato.',
         locationMap: 'Ubicación actual',
         contactMe: 'Contáctame',
+        workingRemotely: 'Trabajo de forma remota desde',
+        spBrazil: 'São Paulo, Brasil',
     }
 }

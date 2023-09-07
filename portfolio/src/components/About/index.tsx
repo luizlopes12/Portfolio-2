@@ -43,7 +43,13 @@ const About = () => {
             </p>
           </article>
           <div className="about__section-location">
+            <p className='about__text1'>
+              <Translator path="workingRemotely" />
+            </p>
             <img src={heroMap} alt={t('locationMap')} />
+            <p className='about__tex2'>
+              <Translator path="spBrazil" />
+            </p>
           </div>
           <img src={reactIcon} className='about__react-icon2'/>
           <img src={nodeIcon} className='about__node-icon1'/>

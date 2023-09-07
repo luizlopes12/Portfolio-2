@@ -122,8 +122,10 @@ body {
     -ms-scrollbar-width: 10px;
     -ms-scrollbar-thumb-color: transparent;
     -ms-scrollbar-thumb: url('../img/page-scroll.svg') center center / contain;
+    overflow-x: hidden;
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
