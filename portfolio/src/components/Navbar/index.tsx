@@ -94,7 +94,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navbar__item">
-              <a href="#techlologies" onClick={handleShowMobileMenu}>
+              <a href="#technologies" onClick={handleShowMobileMenu}>
                 <Translator path="technologies" />
               </a>
             </li>
