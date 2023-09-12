@@ -36,17 +36,32 @@
         color: $color-dark-1;
         font-weight: 700;
     }
+    &.-icon{
+        img{
+            width: 22px;
+            margin: 0 5px;
+        }
+    }
 }
 
 .techs__section-icons{
     background: url('../../assets/img/techs-animation-bg.svg') no-repeat center center / contain;
     width: 28%;
     height: 350px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
-    overflow: hidden;
     position: relative;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        background: url('../../assets/img/techs-bg-lines.svg') no-repeat center center / contain;
+        width: 250px;
+        height: 250px;
+        right: -50%;
+        top: 25%;
+        z-index: -1;
+    }
 }
 
 .tech__icons-name{
@@ -63,17 +78,55 @@
 }
 
 .techs__section-icons-container{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    width: max-content;
-    scroll-behavior: smooth;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    padding: 0 7rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 55px;
+    .swiper-slide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right{
+        background-image: none;
+    }
     img{
-        scroll-snap-align: center;
+        transition: all .3s ease-in-out;
+        margin: auto;
         width: 140px;
         height: 140px;
     }
+    .swiper-slide-next, .swiper-slide-prev{
+        img{
+            transform: scale(.8);
+        }
+    }
+}
+
+.git__bg-icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -40px;
+    left: -80px;
+    z-index: -1;
+}
+
+.sass__bg-icon{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: -100px;
+    right: -20px;
+    z-index: -1;
+}
+
+.cheese__bg-illustration{
+    position: absolute;
+    width: 500px;
+    height: 110px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
 }

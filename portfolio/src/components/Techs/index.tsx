@@ -7,32 +7,63 @@ import postgresTechsIcon from "../../assets/img/postgres-techs-icon.svg";
 import muiTechsIcon from "../../assets/img/mui-techs-icon.svg";
 import sassTechsIcon from "../../assets/img/sass-techs-icon.svg";
 import techsNameLine from "../../assets/img/techs-name-line.svg";
-import { useRef, useState } from "react";
+import configIcon from "../../assets/img/config-icon.svg";
+import gitBgIcon from "../../assets/img/git-bg-icon.svg";
+import sassBgIcon from "../../assets/img/sass-bg-icon.svg";
+import bgCheeseIllustration from "../../assets/img/bg-cheese-illustration.svg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import { EffectCoverflow, Autoplay } from 'swiper/modules';
+
+
+import { useState } from "react";
 // import { useTranslation } from 'react-i18next'
 import Translator from "../I18n/Translator";
 const Techs = () => {
   //   const { t } = useTranslation();
-  const techsCarouselRef = useRef<HTMLDivElement>(null);
-  const [techsCarouselPosition, setTechsCarouselPosition] = useState(0);
-  const techsCarousel = () => {
-    if (techsCarouselRef.current) {
-      const techsCarouselWidth = techsCarouselRef.current.offsetWidth;
-      const techsCarouselScrollWidth = techsCarouselRef.current.scrollWidth;
-  
-      let newPosition;
-      
-      if (techsCarouselPosition < techsCarouselScrollWidth - techsCarouselWidth) {
-        newPosition = techsCarouselPosition + techsCarouselWidth;
-      } else {
-        newPosition = 2;
-      }
-  
-      setTechsCarouselPosition(newPosition);
-  
-      techsCarouselRef.current.scrollLeft = newPosition;
-    }
-  };
-  setInterval(techsCarousel, 5000);
+  interface ITechsCarouselItem {
+    name: string;
+    icon: string;
+  }
+
+  const [activeSlider, setActiveSlider] = useState({
+    name: "React",
+    icon: reactTechsIcon,
+  });
+
+
+  const techsCarouselItems: ITechsCarouselItem[] = [
+    {
+      name: "React/Next",
+      icon: reactTechsIcon,
+    },
+    {
+      name: "Vue/Nuxt",
+      icon: vueTechsIcon,
+    },
+    {
+      name: "Node/Express",
+      icon: nodeTechsIcon,
+    },
+    {
+      name: "MongoDB",
+      icon: mongoTechsIcon,
+    },
+    {
+      name: "PostgreSQL",
+      icon: postgresTechsIcon,
+    },
+    {
+      name: "Material UI",
+      icon: muiTechsIcon,
+    },
+    {
+      name: "Sass/Scss",
+      icon: sassTechsIcon,
+    },
+  ];
 
   return (
     <section className="techs__section-container" id="technologies">
@@ -42,46 +73,89 @@ const Techs = () => {
       <section className="techs__section">
         <div className="techs__section-texts">
           <p className="techs__text">
-            Crio interfaces dinâmicas e envolventes usando <strong>React</strong> e <strong>Vue</strong>, enquanto
+            <Translator path="technologiesText1Part1" />
+            <strong><Translator path="react" /></strong>
+            <Translator path="and" />
+            <strong><Translator path="vue" /></strong>
+            <Translator path="technologiesText1Part2" />
+            <strong><Translator path="node" /></strong>,
+            <strong><Translator path="express" /></strong>
+            <Translator path="and" />
+            <strong><Translator path="typescript" /></strong>
+            <Translator path="technologiesText1Part3" />
+            <strong><Translator path="figma" /></strong>,
+            <strong><Translator path="sass" /></strong>
+            <Translator path="and" />
+            <strong><Translator path="materialUi" /></strong>.
+
+            {/* Crio interfaces dinâmicas e envolventes usando <strong>React</strong> e <strong>Vue</strong>, enquanto
             construo servidores e APIs robustas com <strong>Node</strong>, <strong>Express</strong> e <strong>Typescript</strong>. Minha
-            paixão pelo design se traduz na elegância do <strong>Figma</strong>, <strong>Scss</strong> e <strong>Material
-            UI</strong>.
+            paixão pelo design se traduz na elegância do <strong>Figma</strong>, <strong>Sass/Scss</strong> e <strong>Material
+            UI</strong>. */}
           </p>
           <p className="techs__text">
-            Além disso, domino a gestão de dados com destreza. Sou um expert em
-            <strong>PostgreSQL, MySQL e MongoDB</strong>, reconhecendo que a base sólida de dados
-            é essencial para o sucesso.
+            <Translator path="technologiesText2Part1" />
+            <strong><Translator path="technologiesText2Databases" /></strong>
+            <Translator path="technologiesText2Part2" />
           </p>
           <p className="techs__text -icon">
             <span>
-              Em adição, tenho domínio linguístico do <strong>Português, Inglês e
-              Espanhol</strong>, caso queira, você pode clicar em “
+              <Translator path="technologiesText3Part1" />
+              <strong><Translator path="technologiesText3Languages" /></strong>
+              <Translator path="technologiesText3Part2" />
             </span>
             <img
-              src="../../assets/img/config-icon.svg"
+              src={configIcon}
               alt="Configuration icon"
             />
-            <span>” no menu superior e alterar seu idioma.</span>
+            <span>
+              <Translator path="technologiesText3Part3" />
+            </span>
           </p>
         </div>
         <div className="techs__section-icons">
+          <img src={gitBgIcon} alt="git" className="git__bg-icon"/>
           <h3 className="tech__icons-name">
             <img src={techsNameLine} alt="" />
-            React
+            <span> {activeSlider.name}  </span>              
             <img src={techsNameLine} alt="" />
           </h3>
-          <div className="techs__section-icons-container" ref={techsCarouselRef}>
-            <img src={sassTechsIcon} alt="" />
-            <img src={reactTechsIcon} alt="" />
-            <img src={vueTechsIcon} alt="" />
-            <img src={nodeTechsIcon} alt="" />
-            <img src={mongoTechsIcon} alt="" />
-            <img src={postgresTechsIcon} alt="" />
-            <img src={muiTechsIcon} alt="" />
-            <img src={sassTechsIcon} alt="" />
-          </div>
+          <div className="techs__section-icons-container">
+                    <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={2}
+                    autoplay={{
+                      delay: 2000,
+                      disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    coverflowEffect={{
+                      rotate: 50,
+                      stretch: 0,
+                      depth: 100,
+                      modifier: 1,
+                      slideShadows: true,
+                    }}
+                    modules={[Autoplay, EffectCoverflow]}
+                    className="mySwiper"
+                    onSlideChange={(swiperCore) => {
+                      const { realIndex } = swiperCore;
+                      setActiveSlider(techsCarouselItems[realIndex])
+                    }}
+                  >
+                  {techsCarouselItems.map((item, index) => (
+                          <SwiperSlide>
+                            <img src={item.icon} alt={item.name} key={index}/>
+                          </SwiperSlide>
+                  ))}
+                  </Swiper>
+                  </div>
+          <img src={sassBgIcon} alt="git" className="sass__bg-icon"/>
         </div>
       </section>
+      <img src={bgCheeseIllustration} alt="Cheese with wings" className="cheese__bg-illustration"/>
     </section>
   );
 };
