@@ -64,6 +64,9 @@
   font-size: 1.8rem;
   z-index: 10;
   position: relative;
+  a{
+    cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
+  }
   @media screen and (max-width: 768px) {
     font-size: 2rem;
     text-align: center;
