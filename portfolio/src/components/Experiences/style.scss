@@ -621,3 +621,30 @@
     }
 
 }
+
+.mui__bg-icon{
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+.node__bg-icon{
+    position: absolute;
+    width: 20px;
+    top: -20px;
+    left: 5px;
+}
+
+.mysql__bg-illustration{
+    position: absolute;
+    right: -50px;
+    height: 180px;
+    bottom: -220px;
+    @media screen and (max-width: 768px){
+        right: -20px;
+        height: 120px;
+        bottom: -120px;
+    }
+}

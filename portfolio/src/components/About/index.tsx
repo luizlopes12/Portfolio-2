@@ -8,6 +8,7 @@ import codeIcon from '../../assets/img/code-bg-icon.svg'
 import vueIcon from '../../assets/img/vue-bg-icon.svg'
 import reactIcon from '../../assets/img/react-bg-icon.svg'
 import nodeIcon from '../../assets/img/node-bg-icon.svg'
+import icon2024 from '../../assets/img/2024-icon.svg'
 
 const About = () => {
   const { t } = useTranslation();
@@ -55,6 +56,7 @@ const About = () => {
           <img src={nodeIcon} className='about__node-icon1'/>
 
       </section>
+      <img src={icon2024} className='year__icon'/>
     </section>
   )
 }

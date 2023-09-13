@@ -4,6 +4,15 @@
 
 .projects__section-container{
     @include sectionContainer;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 40%;
+        left: -3%;
+        width: 106%;
+        height: 95px;
+        background: url('../../assets/img/projects-section-bg-slash.svg') no-repeat center center / cover;
+    }
 }
 
 .projects__section-title{
@@ -14,4 +23,8 @@
             width: 110px;
         }
     }
+}
+
+.projects__section{
+    
 }

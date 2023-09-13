@@ -13,6 +13,9 @@ import first from '../../assets/img/companies-first.png'
 import avon from '../../assets/img/companies-avon.png'
 import stone from '../../assets/img/companies-stone.png'
 import scrollarrow from '../../assets/img/xp-texts-scroll-arrow.svg'
+import muiIcon from '../../assets/img/mui-bg-icon.svg'
+import nodeIcon from '../../assets/img/node-bg-icon.svg'
+import mysqlIllustration from '../../assets/img/mysql-bg-illustration.png'
 import ExperienceItem from '../ExperienceItem'
 
 import Translator from '../I18n/Translator'
@@ -26,6 +29,8 @@ const Experiences = () => {
         <Translator path="experiences" />
       </h1>
       <section className='experiences__section'>
+        <img src={nodeIcon} alt="Material UI" className='node__bg-icon'/>
+        <img src={muiIcon} alt="Material UI" className='mui__bg-icon'/>
         <div className="experiences__section-texts">
         <img src={scrollarrow} alt="scroll" className='scroll__arrow -up'/>
           <ExperienceItem
@@ -65,7 +70,6 @@ const Experiences = () => {
           description="digitalpointDescription"
           />
         <img src={scrollarrow} alt="scroll" className='scroll__arrow -down'/>
-
         </div>
             <div className="companies__images-list">
               <div className="companies__images-item">
@@ -106,6 +110,8 @@ const Experiences = () => {
               </div>
           </div>
       </section>
+      <img src={mysqlIllustration} alt="Material UI" className='mysql__bg-illustration'/>
+
     </section>
   )
 }

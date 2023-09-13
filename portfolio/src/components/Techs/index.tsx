@@ -13,10 +13,10 @@ import sassBgIcon from "../../assets/img/sass-bg-icon.svg";
 import bgCheeseIllustration from "../../assets/img/bg-cheese-illustration.svg";
 import postgreBgIcon from "../../assets/img/postgre-bg-icon.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { EffectCoverflow, Autoplay } from 'swiper/modules';
 
 
 import { useState } from "react";
