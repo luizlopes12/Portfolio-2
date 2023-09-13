@@ -11,6 +11,7 @@ import configIcon from "../../assets/img/config-icon.svg";
 import gitBgIcon from "../../assets/img/git-bg-icon.svg";
 import sassBgIcon from "../../assets/img/sass-bg-icon.svg";
 import bgCheeseIllustration from "../../assets/img/bg-cheese-illustration.svg";
+import postgreBgIcon from "../../assets/img/postgre-bg-icon.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -72,6 +73,7 @@ const Techs = () => {
       </h1>
       <section className="techs__section">
         <div className="techs__section-texts">
+          <img src={postgreBgIcon} alt="Postgre" className="postgre__bg-icon"/>
           <p className="techs__text">
             <Translator path="technologiesText1Part1" />
             <strong><Translator path="react" /></strong>
@@ -87,11 +89,6 @@ const Techs = () => {
             <strong><Translator path="sass" /></strong>
             <Translator path="and" />
             <strong><Translator path="materialUi" /></strong>.
-
-            {/* Crio interfaces dinâmicas e envolventes usando <strong>React</strong> e <strong>Vue</strong>, enquanto
-            construo servidores e APIs robustas com <strong>Node</strong>, <strong>Express</strong> e <strong>Typescript</strong>. Minha
-            paixão pelo design se traduz na elegância do <strong>Figma</strong>, <strong>Sass/Scss</strong> e <strong>Material
-            UI</strong>. */}
           </p>
           <p className="techs__text">
             <Translator path="technologiesText2Part1" />
