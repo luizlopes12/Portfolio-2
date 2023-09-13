@@ -113,6 +113,7 @@
     overflow: hidden;
     border-radius: 55px;
     .swiper-slide{
+        cursor: url('../../assets/img/page-cursor-grab.svg'), pointer;
         width: 100%;
         display: flex;
         justify-content: center;

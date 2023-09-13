@@ -16,6 +16,17 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: .5rem;
     max-width: 300px;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: calc(100% + 16px);
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, transparentize($color-white80, .4) 0%, transparentize($color-white80, .7) 25%, transparent 30%, transparent 70%, transparentize($color-white80, .7) 75%, transparentize($color-white80, .4) 100%);
+    }
 }
 
 .companies__images-item {
@@ -29,55 +40,55 @@
     color: white;
     font-size: 24px;
     border-radius: 5px;
-    transition: transform 1s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .companies__images-item:nth-child(1) {
-    animation: reorganize__item1 60s infinite;
+    animation: reorganize__item1 10s infinite;
 }
 
 .companies__images-item:nth-child(2) {
-    animation: reorganize__item2 60s infinite;
+    animation: reorganize__item2 10s infinite;
 }
 
 .companies__images-item:nth-child(3) {
-    animation: reorganize__item3 60s infinite;
+    animation: reorganize__item3 10s infinite;
 }
 
 .companies__images-item:nth-child(4) {
-    animation: reorganize__item4 60s infinite;
+    animation: reorganize__item4 10s infinite;
 }
 
 .companies__images-item:nth-child(5) {
-    animation: reorganize__item5 60s infinite;
+    animation: reorganize__item5 10s infinite;
 }
 
 .companies__images-item:nth-child(6) {
-    animation: reorganize__item6 60s infinite;
+    animation: reorganize__item6 10s infinite;
 }
 
 .companies__images-item:nth-child(7) {
-    animation: reorganize__item7 60s infinite;
+    animation: reorganize__item7 10s infinite;
 }
 
 .companies__images-item:nth-child(8) {
-    animation: reorganize__item8 60s infinite;
+    animation: reorganize__item8 10s infinite;
 }
 
 .companies__images-item:nth-child(9) {
-    animation: reorganize__item9 60s infinite;
+    animation: reorganize__item9 10s infinite;
 }
 
 .companies__images-item:nth-child(10) {
-    animation: reorganize__item10 60s infinite;
+    animation: reorganize__item10 10s infinite;
 }
 
 .companies__images-item:nth-child(11) {
-    animation: reorganize__item11 60s infinite;
+    animation: reorganize__item11 10s infinite;
 }
 
 .companies__images-item:nth-child(12) {
-    animation: reorganize__item12 60s infinite;
+    animation: reorganize__item12 10s infinite;
 }
 
 

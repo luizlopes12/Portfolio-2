@@ -159,6 +159,7 @@
     margin-top: 2rem;
     position: relative;
     a{
+        cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
         &::after{
             content: '';
             position: absolute;
