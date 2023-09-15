@@ -4,9 +4,8 @@
 
 .about__section-container{
     @include sectionContainer;
-    padding-top: 6rem;
     @media screen and (max-width: 768px){
-        margin: 4.5rem auto 3rem;
+        margin: 1rem auto 3rem;
     }
 }
 

@@ -19,6 +19,7 @@ const Navbar = () => {
   const configsTooltipContainerRef = useRef<HTMLDivElement>(null);
   const mobileMenuContainerRef = useRef<HTMLDivElement>(null);
   const navbarContainerRef = useRef<HTMLDivElement>(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   const handleShowConfigs = () => {
     if (configsTooltipBodyRef.current && configsTooltipContainerRef.current) {
@@ -38,11 +39,9 @@ const Navbar = () => {
     changeLanguage(lang);
     handleShowConfigs();
   }
-
   
-
   return (
-    <section className="navbar__section-container">
+    <section className="navbar__section-container" ref={navbarRef}>
       <section className="navbar__section">
         <a href="#aboutme">
             <figure className="brandlogo__figure">

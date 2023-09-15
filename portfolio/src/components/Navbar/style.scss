@@ -4,14 +4,14 @@
 
 
 .navbar__section-container{
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  background: url('../../assets/img/paper-bg.png') no-repeat center / cover;
   z-index: 2;
 }
+
 
 .navbar__section {
   font-family: $font-abasalom;
@@ -23,7 +23,7 @@
   padding: 2rem 1rem 1rem;  
   @media screen and (max-width: 768px) {
     margin: 0 auto;
-    padding: 1rem 1rem;
+    padding: 1rem 1rem .5rem;
   }
 }
 
