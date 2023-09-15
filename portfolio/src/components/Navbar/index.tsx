@@ -39,6 +39,8 @@ const Navbar = () => {
     handleShowConfigs();
   }
 
+  
+
   return (
     <section className="navbar__section-container">
       <section className="navbar__section">

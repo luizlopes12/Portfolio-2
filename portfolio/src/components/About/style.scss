@@ -4,6 +4,7 @@
 
 .about__section-container{
     @include sectionContainer;
+    padding-top: 6rem;
 }
 
 .about__section-title{
