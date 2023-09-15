@@ -164,7 +164,7 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
@@ -174,7 +174,7 @@
   @media screen and (max-width: 768px) {
     filter: invert(1);
   }
-  cursor: pointer;
+  cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
   width: 22px;
   transition: all 0.3s ease-in-out;
 }
@@ -199,7 +199,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 0.4rem;
-    cursor: pointer;
+    cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
     transition: all .2s ease-in-out;
     font-size: 1.4rem;
     width: 100%;
@@ -229,7 +229,7 @@
 }
 
 .mobile__menu-container {
-  cursor: pointer;
+  cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
   @media screen and (max-width: 768px) {
     display: flex;
     z-index: 110;
