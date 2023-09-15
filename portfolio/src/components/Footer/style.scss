@@ -19,10 +19,10 @@
     top: -82px;
     left: 50%;
     right: 50%;
-    transform: translateX(-50%);
     width: 100px;
     height: 100px;
     @media screen and (max-width: 768px) {
+        transform: translateX(-50%);
         top: -89px;
     }
 }
