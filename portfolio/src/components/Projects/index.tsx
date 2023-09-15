@@ -1,16 +1,11 @@
 import './style.scss'
-// import { useTranslation } from 'react-i18next'
 import Translator from '../I18n/Translator'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay, Pagination } from 'swiper/modules';
-import ProjectsItemCard from '../ProjectsItemCard';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 
 const Projects = () => {
-//   const { t } = useTranslation();
 
   return (
     <section className='projects__section-container' id="projects">
