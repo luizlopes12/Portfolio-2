@@ -1,8 +1,9 @@
 import './style.scss'
 // import { useTranslation } from 'react-i18next'
 import Translator from '../I18n/Translator'
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { EffectCoverflow, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Autoplay, Pagination } from 'swiper/modules';
+import ProjectsItemCard from '../ProjectsItemCard';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -17,7 +18,39 @@ const Projects = () => {
         <Translator path="projects" />
       </h1>
       <section className='projects__section'>
-
+      <Swiper
+        slidesPerView={3}
+        slidesPerGroup={3}
+        spaceBetween={30}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination, Autoplay, EffectCoverflow]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <ProjectsItemCard/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectsItemCard/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectsItemCard/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectsItemCard/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectsItemCard/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectsItemCard/>
+        </SwiperSlide>
+      </Swiper>
       </section>
     </section>
   )
