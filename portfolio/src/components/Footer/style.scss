@@ -1,0 +1,24 @@
+@import '../../assets/sass/variables.scss';
+@import '../../assets/sass/fonts.scss';
+@import '../../assets/sass/mixins.scss';
+
+.footer__section-container{
+    width: 100%;
+    background: $color-dark-3;
+    padding: 2rem 0;
+}
+
+.footer__section{
+    @include sectionContainer;
+    margin: 0;
+    min-height: 200px
+}
+
+.gitlab__footer-icon{
+    position: absolute;
+    top: -82px;
+    left: 50%;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+}

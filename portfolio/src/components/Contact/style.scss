@@ -4,14 +4,87 @@
 
 .contact__section-container{
     @include sectionContainer;
+    margin-bottom: 8rem
 }
 
 .contact__section-title{
     @include sectionTitle;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
     &::after{
-        background: url('../../assets/img/contact-title-underline.svg') no-repeat left center / contain;
+        left: -25px;
+        background: url('../../assets/img/contact-title-underline.svg') no-repeat center center / contain;
         @media screen and (max-width: 768px){
             width: 110px;
         }
+    }
+}
+
+.contact__section-subtitle{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: $color-gray-2;
+    transform: translateY(-30px);
+}
+
+.contact__methods{
+    padding: 1rem 5rem;
+    width: fit-content;
+    display: flex;
+    gap: 1.35rem;
+    justify-content: center;
+    margin: -1rem auto;
+    background: url('../../assets/img/contact-methods-bg.png') no-repeat center center / contain;
+    a, button{
+        img{
+            width: 45px;
+        }
+        position: relative;
+        cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
+    }
+}
+
+
+.copied__popup{
+    position: absolute;
+    left: 40px;
+    top: -20px;
+    background: $color-dark-1;
+    padding: .5rem;
+    color: $color-white;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.code__bg-icon1{
+    position: absolute;
+    right: 150px;
+    top: 30px;
+    height: 15px;
+    @media screen and (max-width: 640px) {
+        right: 10px;
+    }
+}
+
+.react__bg-icon1{
+    position: absolute;
+    z-index: -1;
+    left: 150px;
+    top: 100px;
+    height: 40px;
+    @media screen and (max-width: 640px) {
+        left: 20px;
+    }
+}
+
+.react__bg-icon2{
+    position: absolute;
+    right: 100px;
+    bottom: -100px;
+    height: 60px;
+    @media screen and (max-width: 640px) {
+        right: 30px;
     }
 }

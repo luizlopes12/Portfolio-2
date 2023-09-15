@@ -17,7 +17,9 @@ const Projects = () => {
         <Translator path="projects" />
       </h1>
       <section className='projects__section'>
-
+          <h3>
+            <Translator path='comingSoon'/>
+          </h3>
       </section>
     </section>
   )

@@ -53,5 +53,8 @@ export default {
         digitalpointDescription: 'Responsable de organizar, analizar y corregir datos de fichas clínicas hospitalarias en la base de datos de la empresa.',
         divtechStatus: '03/2022 - 06/2022', 
         digitalpointStatus: '05/2021 - 09/2021',
+        comingSoon: 'En Breve...',
+        likeItContactMe: '¿Gustar? ¡Contáctame!',
+        copiedToTransfer: '¡Copiado al portapapeles!'
     }
 }

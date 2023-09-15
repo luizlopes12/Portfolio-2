@@ -13,9 +13,9 @@ export default {
       idioms: 'Idioms',
       heroIllustration: 'Initial illustration',
       worksIllustration: 'Ui/Ux Designer, Front-end and Back-end Developer',
-      fullstackDeveloper: 'Fullstack Developer',
+      fullstackDeveloper: 'Software Engineer',
       techsFocus: 'Focused on React, Vue, node and Progressive web apps.',
-      aboutMeText: "I'm a Fullstack Developer with several years of experience in web and mobile development, working with both large and small companies as a freelancer and in teams.",
+      aboutMeText: "I'm a Software Engineer with several years of experience in web and mobile development, working with both large and small companies as a freelancer and in teams.",
       locationMap: 'Current location',
       contactMe: 'Contact me',
       workingRemotely: 'Working remotely from',
@@ -39,8 +39,8 @@ export default {
       technologiesText3Languages: "Portuguese, English and Spanish,",
       technologiesText3Part2: " if you want, you can click on “",
       technologiesText3Part3: "” in the top menu and change your language.",
-      frontendDev: 'Front-end Developer',
-      fullstackDev: 'Fullstack Developer',
+      frontendDev: 'Front-end Software Engineer',
+      fullstackDev: 'Software Engineer',
       uiDesigner: 'Ui/Ux Designer',
       current: 'Current',
       freelancer: 'Freelancer',
@@ -53,5 +53,8 @@ export default {
       digitalpointDescription: 'Responsible for organizing, analyzing and correcting data from hospital medical records in the company\'s database.',
       divtechStatus: '03/2022 - 06/2022',
       digitalpointStatus: '05/2021 - 09/2021',
+      comingSoon: 'Coming Soon...',
+      likeItContactMe: 'Liked it? contact me!',
+      copiedToTransfer: 'Copied to clipboard!'
     }
 }
