@@ -46,13 +46,13 @@
     &::after{
         background: url('../../assets/img/projects-title-underline.svg') no-repeat left center / contain;
         @media screen and (max-width: 768px){
-            width: 220px;
+            width: 110px;
         }
     }
 }
 
 .projects__section{
-    min-height: 100px;
+    min-height: 250px;
     display: grid;
     place-items: center;
 
