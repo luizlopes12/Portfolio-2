@@ -18,39 +18,9 @@ const Projects = () => {
         <Translator path="projects" />
       </h1>
       <section className='projects__section'>
-      <Swiper
-        slidesPerView={3}
-        slidesPerGroup={3}
-        spaceBetween={30}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: true,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination, Autoplay, EffectCoverflow]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <ProjectsItemCard/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectsItemCard/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectsItemCard/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectsItemCard/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectsItemCard/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectsItemCard/>
-        </SwiperSlide>
-      </Swiper>
+          <h3>
+            <Translator path='comingSoon'/>
+          </h3>
       </section>
     </section>
   )
