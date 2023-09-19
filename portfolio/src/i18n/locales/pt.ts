@@ -55,6 +55,9 @@ export default {
         digitalpointStatus: '05/2021 - 09/2021',
         comingSoon: 'Em Breve...',
         likeItContactMe: 'Gostou? Entre em contato comigo!',
-        copiedToTransfer: 'Copiado para a area de transferência!'
+        copiedToTransfer: 'Copiado para a area de transferência!',
+        socials: 'Redes sociais',
+        footerBrandText: 'Este é o meu portfólio como desenvolvedor Fullstack, sinta-se livre para entrar em contato :)',
+        footerCredits: 'Feito com ❤ por @luizlopes12',
     }
   }

@@ -55,6 +55,9 @@ export default {
       digitalpointStatus: '05/2021 - 09/2021',
       comingSoon: 'Coming Soon...',
       likeItContactMe: 'Liked it? contact me!',
-      copiedToTransfer: 'Copied to clipboard!'
+      copiedToTransfer: 'Copied to clipboard!',
+      socials: 'Socials',
+      footerBrandText: 'This is my portfolio as a Software Engineer, feel free to contact me :)',
+      footerCredits: 'Made with ❤ by @luizlopes12',
     }
 }
