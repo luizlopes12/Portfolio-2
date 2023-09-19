@@ -16,8 +16,8 @@ const Footer = () =>{
             <section className="footer__section">
                 <img src={gitlabIcon} alt="Gitlab" className='gitlab__footer-icon'/>
                 <div className="footer__section-info">
-                    <div className="footer__socials">
                         <img src={nodeIcon} alt="Node" className='node__footer-icon'/>
+                    <div className="footer__socials">
                         <p className='footer__socials-text'><Translator path='socials'/></p>
                         <div className="footer__socials-icons">
                             <a href="https://www.instagram.com/confuzzo/" target='_blank'>
