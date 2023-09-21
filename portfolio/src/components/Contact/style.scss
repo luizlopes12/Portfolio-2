@@ -17,7 +17,7 @@
     text-align: center;
     &::after{
         left: -25px;
-        background: url('../../assets/img/contact-title-underline.svg') no-repeat center center / contain;
+        background: url('/contact-title-underline.svg') no-repeat center center / contain;
         @media screen and (max-width: 768px){
             width: 110px;
         }
@@ -39,13 +39,13 @@
     gap: 1.35rem;
     justify-content: center;
     margin: -1rem auto;
-    background: url('../../assets/img/contact-methods-bg.png') no-repeat center center / contain;
+    background: url('/contact-methods-bg.png') no-repeat center center / contain;
     a, button{
         img{
             width: 45px;
         }
         position: relative;
-        cursor: url('../../assets/img/page-cursor-pointer.svg'), pointer;
+        cursor: url('/page-cursor-pointer.svg'), pointer;
     }
 }
 

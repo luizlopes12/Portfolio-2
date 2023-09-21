@@ -1,14 +1,14 @@
 import './style.scss'
 import { useTranslation } from 'react-i18next'
 import Translator from '../I18n/Translator'
-import heroIllustration from '../../assets/img/hero-illustration.svg'
-import illustrationWorks from '../../assets/img/illustration-works.svg'
-import heroMap from '../../assets/img/hero-map.svg'
-import codeIcon from '../../assets/img/code-bg-icon.svg'
-import vueIcon from '../../assets/img/vue-bg-icon.svg'
-import reactIcon from '../../assets/img/react-bg-icon.svg'
-import nodeIcon from '../../assets/img/node-bg-icon.svg'
-import icon2024 from '../../assets/img/2024-icon.svg'
+import heroIllustration from '/hero-illustration.svg'
+import illustrationWorks from '/illustration-works.svg'
+import heroMap from '/hero-map.svg'
+import codeIcon from '/code-bg-icon.svg'
+import vueIcon from '/vue-bg-icon.svg'
+import reactIcon from '/react-bg-icon.svg'
+import nodeIcon from '/node-bg-icon.svg'
+import icon2024 from '/2024-icon.svg'
 
 const About = () => {
   const { t } = useTranslation();

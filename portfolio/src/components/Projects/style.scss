@@ -12,7 +12,7 @@
         z-index: -1;
         width: 106%;
         height: 95px;
-        background: url('../../assets/img/projects-section-bg-slash.svg') no-repeat center center / cover;
+        background: url('/projects-section-bg-slash.svg') no-repeat center center / cover;
         @media screen and (max-width: 1290px) {
             left: 0;
             width: 100%;
@@ -44,7 +44,7 @@
 .projects__section-title{
     @include sectionTitle;
     &::after{
-        background: url('../../assets/img/projects-title-underline.svg') no-repeat left center / contain;
+        background: url('/projects-title-underline.svg') no-repeat left center / contain;
         @media screen and (max-width: 768px){
             width: 110px;
         }

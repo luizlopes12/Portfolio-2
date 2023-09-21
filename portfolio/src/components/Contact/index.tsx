@@ -1,9 +1,9 @@
 import './style.scss'
 import Translator from '../I18n/Translator'
-import linkedinIcon from '../../assets/img/linkedin-contact-icon.svg'
-import emailIcon from '../../assets/img/email-contact-icon.svg'
-import codeIcon from '../../assets/img/code-bg-icon.svg'
-import reactIcon from '../../assets/img/react-bg-icon.svg'
+import linkedinIcon from '/linkedin-contact-icon.svg'
+import emailIcon from '/email-contact-icon.svg'
+import codeIcon from '/code-bg-icon.svg'
+import reactIcon from '/react-bg-icon.svg'
 import { useState } from 'react'
 
 const Contact = () => {

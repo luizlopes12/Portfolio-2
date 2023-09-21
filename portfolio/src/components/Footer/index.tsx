@@ -1,14 +1,14 @@
 import './style.scss'
-import gitlabIcon from '../../assets/img/footer-gitlab-icon.svg'
+import gitlabIcon from '/footer-gitlab-icon.svg'
 import Translator from '../I18n/Translator';
-import instagram from '../../assets/img/instagram.svg'
-import linkedin from '../../assets/img/linkedin.svg'
-import github from '../../assets/img/github-icon.svg'
-import twitter from '../../assets/img/twitter.svg'
-import socialsDivider from '../../assets/img/socials-divider.svg'
-import brandLogoWhite from '../../assets/img/brand-logo-white.svg'
-import sqlIllustration from '../../assets/img/sql-footer-illustration.png'
-import nodeIcon from '../../assets/img/node-footer-icon.svg'
+import instagram from '/instagram.svg'
+import linkedin from '/linkedin.svg'
+import github from '/github-icon.svg'
+import twitter from '/twitter.svg'
+import socialsDivider from '/socials-divider.svg'
+import brandLogoWhite from '/brand-logo-white.svg'
+import sqlIllustration from '/sql-footer-illustration.png'
+import nodeIcon from '/node-footer-icon.svg'
 
 const Footer = () =>{
     return(
