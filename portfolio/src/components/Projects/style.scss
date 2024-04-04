@@ -4,10 +4,13 @@
 
 .projects__section-container{
     @include sectionContainer;
+    position: relative;
+    width: 100%;
+
     &::before{
         position: absolute;
         content: '';
-        top: 60%;
+        top: 40%;
         left: -3%;
         z-index: -1;
         width: 106%;
@@ -55,11 +58,53 @@
     min-height: 250px;
     display: grid;
     place-items: center;
+    width: 100%;
 
     h3{
         font-family: $font-abasalom;
         font-size: 3rem;
         font-weight: 800;
         color: $color-gray-6;
+    }
+}
+
+.projects__carousel{
+    width: 100%;
+    padding-bottom: 60px;
+
+    &.swiper{
+        overflow: hidden;
+    }
+    .swiper-wrapper{
+        &:hover{
+            cursor: url('/page-cursor-grab.svg'), pointer !important;
+        }
+    }
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+    height: 20px;
+    width: 50px;
+    background: url('/carousel-slider.svg') no-repeat center center / contain;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+}
+
+.swiper-button-prev{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.swiper-button-next{
+    right: 0;
+    z-index: 2;
+}
+
+.swiper-slide{
+    min-height: 100%;
+    @media screen and (max-width: 320px) {
+        min-width: 100%;
     }
 }
