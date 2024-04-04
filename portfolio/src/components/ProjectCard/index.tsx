@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.scss'
 import githubIcon from '/github-projicon.svg'
 import siteIcon from '/site-projicon.svg'
