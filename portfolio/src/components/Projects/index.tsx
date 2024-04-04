@@ -85,17 +85,17 @@ const Projects = () => {
         grabCursor={true}
         breakpoints={{
           1080: {
-            slidesPerGroup: 3,
+            slidesPerGroup: 1,
             slidesPerView: 3,
             spaceBetween: 30
           },
           768: {
-            slidesPerGroup: 2,
+            slidesPerGroup: 1,
             slidesPerView: 2,
             spaceBetween: 30
           },
           600: {
-            slidesPerGroup: 2,
+            slidesPerGroup: 1,
             slidesPerView: 2,
             spaceBetween: 30
           },
@@ -119,7 +119,7 @@ const Projects = () => {
         slidesPerGroup={3}
         spaceBetween={30}
         autoplay={{
-          delay: 50000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         loop={true}
