@@ -3,11 +3,11 @@ import './style.scss'
 import githubIcon from '/github-projicon.svg'
 import siteIcon from '/site-projicon.svg'
 import { useTranslation } from 'react-i18next'
-import Translator from '../../I18n/Translator'
+import Translator from '../I18n/Translator'
 
 const ProjectCard = ({
     project
-}) => {
+}: any) => {
     const { t } = useTranslation()
   return (
     <div className='project__card'>

@@ -5,7 +5,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
-import ProjectCard from './ProjectCard'
+import ProjectCard from '../ProjectCard';
 
 const Projects = () => {
   let projectsList = [
