@@ -13,7 +13,7 @@ export default {
         idioms: 'Idiomas',
         heroIllustration: 'Ilustración inicial',
         worksIllustration: 'Diseñador Ui/Ux, Desarrollador Front-end y Back-end',
-        fullstackDeveloper: 'Desarrollador Fullstack',
+        fullstackDeveloper: 'Desarrollador de Software',
         techsFocus: 'Centrado en React, Vue, node y kotlin.',
         aboutMeText: 'Soy un desarrollador fullstack con varios años de experiencia en desarrollo web y móvil, trabajando con empresas grandes y pequeñas como freelance y en equipos.',
         locationMap: 'Ubicación actual',
