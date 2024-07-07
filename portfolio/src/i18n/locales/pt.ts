@@ -43,6 +43,7 @@ export default {
         fullstackDev: 'Desenvolvedor Fullstack',
         current: 'Atualmente',
         freelancer: 'Freelancer',
+        tradeDescription: 'Responsável pelo desenvolvimento Front-end da plataforma principal, focado na utilização de testes end to end, garantinho a qualidade do desenvolvimento e entregas para grandes empresas do mercado financeiro.',
         inspandDescription: 'Responsável pela criação, idealização e reinvenção e aplicação do design e Frontend dos clientes da empresa, trabalhando ao lado de grandes empresas como Amil, Claro, B3, Natura, Avon, Stone, F1rst e Mary Kay.',
         brikDescription: 'Responsável por desenvolver um sistema de venda e gerenciamento de lotes urbanos e rurais baseado no conceito de e-commerce e também uma landing page para uma melhor divulgação da empresa, atuei tanto na etapa de definição de escopo, requisitos, modelagem dos dados, desenvolvimento e publicação.',
         fatecDescription: 'Responsável por desenvolver uma aplicação web para a captura dos votos populares do “Encontro Cervejeiro de Registro” um evento anual que apresenta cervejas artesanais, a aplicação foi utilizada por cerca de 500 usuários em 1 dia.',

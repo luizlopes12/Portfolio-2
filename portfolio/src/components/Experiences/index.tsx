@@ -34,9 +34,15 @@ const Experiences = () => {
         <div className="experiences__section-texts">
         <img src={scrollarrow} alt="scroll" className='scroll__arrow -up'/>
           <ExperienceItem
-          company="Inspand"
+          company="Trade Insights"
           title="frontendDev"
           status="current"
+          description="tradeDescription"
+          />
+          <ExperienceItem
+          company="Inspand"
+          title="frontendDev"
+          status="06/2022 - 06/2024"
           description="inspandDescription"
           />
           <ExperienceItem
