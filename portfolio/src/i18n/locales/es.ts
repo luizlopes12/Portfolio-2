@@ -52,7 +52,7 @@ export default {
         dominusDescription: 'Responsable de desarrollar un prototipo funcional de una aplicación de venta de cursos dirigida al mercado de la seguridad laboral, utilizando Figma.',
         divtechDescription: 'Responsable de realizar el mantenimiento y actualización de los sistemas de los clientes de la empresa.',
         digitalpointDescription: 'Responsable de organizar, analizar y corregir datos de fichas clínicas hospitalarias en la base de datos de la empresa.',
-        divtechStatus: '03/2022 - 06/2022', 
+        divtechStatus: '01/2022 - 06/2022', 
         digitalpointStatus: '05/2021 - 09/2021',
         comingSoon: 'En Breve...',
         likeItContactMe: '¿Gustar? ¡Contáctame!',
