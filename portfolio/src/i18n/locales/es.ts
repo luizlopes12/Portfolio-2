@@ -43,6 +43,7 @@ export default {
         fullstackDev: 'Desarrollador Fullstack',
         current: 'Actual',
         freelancer: 'Freelancer',
+        stefaniniDescription: 'Responsable de desarrollar el Front End de los proyectos del equipo Gauge utilizando React, Next, Vue y Nuxt como stack principal.',
         tradeDescription: 'Responsable del desarrollo Front-end de la plataforma principal, enfocado en el uso de pruebas de extremo a extremo, asegurando la calidad del desarrollo y entregas para grandes empresas del mercado financiero.',
         inspandDescription: 'Responsable de la creación, idealización y reinvención y aplicación del diseño y Frontend de los clientes de la empresa, trabajando junto a grandes empresas como Amil, Claro, B3, Natura, Avon, Stone, F1rst y Mary Kay.',
         brikDescription: 'Responsable de desarrollar un sistema de venta y gestión de lotes urbanos y rurales basado en el concepto de comercio electrónico y también una página de destino para una mejor divulgación de la empresa, actué tanto en la etapa de definición de alcance, requisitos, modelado de datos, desarrollo y publicación.',

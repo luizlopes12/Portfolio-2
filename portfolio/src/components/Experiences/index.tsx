@@ -33,10 +33,16 @@ const Experiences = () => {
         <img src={muiIcon} alt="Material UI" className='mui__bg-icon'/>
         <div className="experiences__section-texts">
         <img src={scrollarrow} alt="scroll" className='scroll__arrow -up'/>
+        <ExperienceItem
+          company="Stefanini"
+          title="frontendDev"
+          status="current"
+          description="stefaniniDescription"
+          />
           <ExperienceItem
           company="Trade Insights"
           title="frontendDev"
-          status="current"
+          status="06/2024 - 10/2024"
           description="tradeDescription"
           />
           <ExperienceItem
