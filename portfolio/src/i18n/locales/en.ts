@@ -44,7 +44,7 @@ export default {
       uiDesigner: 'Ui/Ux Designer',
       current: 'Current',
       freelancer: 'Freelancer',
-      stefaniniDescription: 'Responsible to develop the Front End of Gauge squad projects using React, Next, Vue and Nuxt as a main stack.',
+      stefaniniDescription: 'Responsible to develop the Front End of Gauge squad projects using React, Next, Vue and Nuxt as a main stack, sometimes using Python with Django to backend development.',
       tradeDescription: 'Responsible for the front-end development of the main platform, focused on the use of end-to-end testing, ensuring the quality of development and deliveries for major companies in the financial market.',
       inspandDescription: 'Responsible for the creation, idealization and reinvention and application of the design and Frontend of the company\'s clients, working alongside large companies such as Amil, Claro, B3, Natura, Avon, Stone, F1rst and Mary Kay.',
       brikDescription: 'Responsible for developing a system for selling and managing urban and rural lots based on the concept of e-commerce and also a landing page for better company disclosure, I acted both in the scope definition, requirements, data modeling, development and publication.',

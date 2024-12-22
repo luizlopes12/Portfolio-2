@@ -35,7 +35,7 @@ const Experiences = () => {
         <img src={scrollarrow} alt="scroll" className='scroll__arrow -up'/>
         <ExperienceItem
           company="Stefanini"
-          title="frontendDev"
+          title="fullstackDev"
           status="current"
           description="stefaniniDescription"
           />
