@@ -65,6 +65,7 @@ export default {
         site: 'Site',
         learnifyDesc: 'Projeto colaborativo open source que tinha como objetivo criar um quiz online com alguns temas específicos, com pontuação, resultado e explicação dos erros do usuário.',
         oberonDesc: 'Landing page de apresentação do produto "Boe", página composta dos objetivos do projeto, demonstrações, apresentação da equipe e uma visão geral do andamento do projeto.',
+        lazyDesc: 'Landing page de apresentação do produto "Red Bag", página composta dos objetivos do projeto, demonstrações, apresentação da equipe e uma visão geral do andamento do projeto.',
         enverDesc: 'Landing page para uma empresa focada em design de projetos e soluções de acordo com a sua necessidade, com itens como criação de vídeo, design gráfico e UI/UX.',
         fellasDesc: 'Landing page de apresentação do produto "Bellos", página composta dos objetivos do projeto, demonstrações, apresentação da equipe e uma visão geral do andamento do projeto.',
         selfcareDesc: 'Página inicial de um e-commerce de produtos naturais, inspirada em padrões utilizados frequentemente pelo mercado atual, com seus produtos listados em grade.',

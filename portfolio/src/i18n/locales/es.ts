@@ -65,6 +65,7 @@ export default {
         site: 'Sitio',
         learnifyDesc: "Proyecto colaborativo de código abierto que tenía como objetivo crear un cuestionario en línea con temas específicos, con puntuación, resultados y explicación de los errores del usuario.",
         oberonDesc: "Página de aterrizaje que presenta el producto 'Boe', compuesta por los objetivos del proyecto, demostraciones, presentación del equipo y una visión general del progreso del proyecto.",
+        lazyDesc: "Página de aterrizaje que presenta el producto 'Red Bag', compuesta por los objetivos del proyecto, demostraciones, presentación del equipo y una visión general del progreso del proyecto.",
         enverDesc: "Página de aterrizaje para una empresa enfocada en el diseño de proyectos y soluciones según sus necesidades, con funciones como creación de video, diseño gráfico y UI/UX.",
         fellasDesc: "Página de aterrizaje que presenta el producto 'Bellos', compuesta por los objetivos del proyecto, demostraciones, presentación del equipo y una visión general del progreso del proyecto.",
         selfcareDesc: "Página de inicio de un comercio electrónico de productos naturales, inspirada en patrones utilizados con frecuencia en el mercado actual, con productos listados en una cuadrícula.",

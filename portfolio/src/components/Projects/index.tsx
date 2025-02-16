@@ -26,12 +26,12 @@ const Projects = () => {
       siteLink: 'https://oberoon.vercel.app/'
     },
     {
-      title: 'Enver',
-      description: 'enverDesc',
-      desktopImage: '/projects-images/enver-1.png',
-      mobileImage: '/projects-images/enver-2.png',
-      githubLink: 'https://github.com/luizlopes12/Enver',
-      siteLink: 'https://goenver.vercel.app/'
+      title: 'Lazy Team',
+      description: 'lazyDesc',
+      desktopImage: '/projects-images/lazy-1.png',
+      mobileImage: '/projects-images/lazy-2.png',
+      githubLink: 'https://github.com/luizlopes12/Lazy-landing-page',
+      siteLink: 'https://lazyteam.vercel.app/'
     },
     {
       title: 'Fellas',
@@ -40,22 +40,6 @@ const Projects = () => {
       mobileImage: '/projects-images/fellas-2.png',
       githubLink: 'https://github.com/luizlopes12/Fellas',
       siteLink: 'https://gofellas.vercel.app/'
-    },
-    {
-      title: 'SelfCare',
-      description: 'selfcareDesc',
-      desktopImage: '/projects-images/selfcare-1.png',
-      mobileImage: '/projects-images/selfcare-2.png',
-      githubLink: 'https://github.com/luizlopes12/SelfCare',
-      siteLink: 'https://luizlopes12.github.io/SelfCare/'
-    },
-    {
-      title: 'Fylo',
-      description: 'fyloDesc',
-      desktopImage: '/projects-images/fylo-1.png',
-      mobileImage: '/projects-images/fylo-2.png',
-      githubLink: 'https://github.com/luizlopes12/Fylo',
-      siteLink: 'https://luizlopes12.github.io/Fylo/'
     },
     {
       title: 'LetMeAsk',

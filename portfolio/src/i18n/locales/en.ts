@@ -65,6 +65,7 @@ export default {
       site: 'Site',
       learnifyDesc: "Open-source collaborative project aimed at creating an online quiz with specific themes, featuring scoring, results, and explanations of user errors.",
       oberonDesc: "Landing page introducing the product 'Boe', comprising project objectives, demonstrations, team presentation, and an overview of the project's progress.",
+      lazyDesc: "Landing page introducing the product 'Red Bag', comprising project objectives, demonstrations, team presentation, and an overview of the project's progress.",
       enverDesc: "Landing page for a company focused on designing projects and solutions according to your needs, with features such as video creation, graphic design, and UI/UX.",
       fellasDesc: "Landing page introducing the product 'Bellos', comprising project objectives, demonstrations, team presentation, and an overview of the project's progress.",
       selfcareDesc: "Homepage of a natural products e-commerce, inspired by patterns frequently used in the current market, with products listed in a grid.",
