@@ -24,7 +24,7 @@ const Footer = () =>{
                                 <img src={instagram} alt="Instagram" />
                             </a>
                             <img src={socialsDivider} alt="" />
-                            <a href="https://twitter.com/Luizlopes24" target='_blank'>
+                            <a href="https://twitter.com/zerozeroc0de" target='_blank'>
                                 <img src={twitter} alt="Twitter" />
                             </a>
                             <img src={socialsDivider} alt="" />
